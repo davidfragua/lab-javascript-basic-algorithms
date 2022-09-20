@@ -51,18 +51,21 @@ if (hacker1[0] < hacker2[0]){
 
 // BONUS 1 -> Declarar e inicializar variable lorem
 
-let lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lacinia mi ac tellus pulvinar, at vehicula purus lacinia. Mauris a ante pharetra, pharetra felis ac, consequat nisl. Aenean elit ligula, volutpat et ex vitae, facilisis euismod ligula. Fusce leo lorem, euismod et maximus sed, convallis eget magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a diam et turpis tristique sodales id id tellus. Nulla at leo sed diam gravida eleifend sed in libero. Praesent cursus maximus nisl ut tristique. Ut et aliquam neque. Ut sagittis erat sit amet odio blandit, nec congue lorem laoreet. Sed scelerisque dui in leo mattis maximus. Curabitur tempor lobortis tellus pulvinar cursus. Sed pretium ligula in quam maximus imperdiet in at mauris. Maecenas nec finibus mi. In eu ex cursus velit interdum tempus vitae non augue. Nulla vitae mattis lorem, eu volutpat odio. Etiam mattis ullamcorper pharetra. Phasellus id tempor libero, at gravida orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tristique sapien id tortor tempus dictum. Quisque laoreet nibh elementum est rhoncus euismod. In lacus nibh, vulputate in aliquam a, volutpat a neque. Curabitur et erat nunc. Suspendisse potenti. Cras pulvinar, libero eu porta pharetra, augue magna tempor nulla, id convallis magna diam eu lorem. Duis hendrerit hendrerit erat, in bibendum urna imperdiet vitae. Sed ut porta lacus. Mauris commodo dolor non elit viverra mollis. Fusce scelerisque at orci in finibus.";
+let lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lacinia mi ac tellus pulvinar, at vehicula purus lacinia. Mauris a ante pharetra, pharetra felis ac, consequat nisl. Aenean elit ligula, volutpat et ex vitae, facilisis euismod ligula. Fusce leo lorem, euismod et maximus sed, convallis eget magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a diam et turpis tristique sodales id id tellus. Nulla at leo sed diam gravida eleifend sed in libero. Praesent cursus maximus nisl ut tristique. Ut et aliquam neque. Ut sagittis erat sit amet odio blandit, nec congue lorem laoreet. Sed scelerisque dui in leo mattis maximus. Curabitur tempor lobortis tellus pulvinar cursus. Sed pretium ligula in quam maximus imperdiet in at mauris. Maecenas nec finibus mi. In eu ex cursus velit interdum tempus vitae non augue. Nulla vitae mattis lorem, eu volutpat odio. Etiam mattis ullamcorper pharetra. Phasellus id tempor libero, at gravida orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tristique sapien id tortor tempus dictum. Quisque laoreet nibh elementum est rhoncus euismod. In lacus nibh, vulputate in aliquam a, volutpat a neque. Curabitur et erat nunc. Suspendisse potenti. Cras pulvinar, libero eu porta pharetra, augue magna tempor nulla, id convallis magna diam eu lorem. Duis hendrerit hendrerit erat, in bibendum urna imperdiet vitae. Sed ut porta lacus. Mauris commodo dolor non elit viverra mollis. Fusce scelerisque at orci in finibus. ";
 
 // BONUS 1 -> Contar el número de palabras
+// Como no se me ocurría otra cosa, he contado el número de espacios en blanco, que coincide con el número de palabras
 
-// let counter = 0;
+let counter = 0;
 
-// for (let i = 0; i < lorem.length; i++){
-//     console.log(lorem[1]);
-//     if(lorem[1] === " "){
+for (let i = 0; i < lorem.length; i++){
+    console.log(lorem[i]);
+    if(lorem[i] === " "){
+        counter++
+    }
+}
 
-//     }
-// }
+console.log(`El número de palabras totales son: ${counter}`)
 
 
 // BONUS 1 -> Número de veces que aparece "et"
