@@ -59,7 +59,6 @@ let lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin laci
 let counter = 0;
 
 for (let i = 0; i < lorem.length; i++){
-    console.log(lorem[i]);
     if(lorem[i] === " "){
         counter++
     }
@@ -79,3 +78,14 @@ for (let i = 0; i < lorem.length; i++) {
 }
 
 console.log(`El número de veces que sale "et" es: ${counterEt}`)
+
+
+// BONUS 2 -> lo estoy intentando...
+let phraseToCheck = "step on no pets"
+
+for (let i = 0; i < phraseToCheck.length; i++){
+    if(phraseToCheck[i] === (phraseToCheck.length - 1)){
+        console.log("Es un palíndromo")
+    }
+
+}
